@@ -1,0 +1,172 @@
+/* Custom CSS from here on out */
+
+/** Layout **/
+.tab_container{
+	height:50px;
+}
+
+.tab_bar{
+	width:460px; /* Stretches or reduces individual list elements */
+	list-style: none;
+	padding:0px;
+	margin:0px;
+}
+
+.tab_bar li{
+	height:50px;
+	float:left;
+	padding:0px 10px 0px 5px;
+	overflow:hidden;
+	position:relative;
+}
+
+.tab_bar li a{
+}
+
+li.tab_first{
+	padding-left:10px;
+}
+
+.tab_first .tab_corner_left{
+	width:5px;
+	height:50px;
+	position:absolute;
+	top:0px;
+	left:-1px;
+	display:inline-block;
+}
+
+li.tab_last{
+	overflow:visible;
+}
+
+.tab_last .tab_corner_right{
+	width:5px;
+	height:50px;
+	position:absolute;
+	top:0px;
+	left:100%;
+	display:inline-block;
+}
+
+ul li.tab_pointer{
+	width:28px;
+	height:50px;
+	padding:0px;
+}
+
+/** Typography **/
+.tab_container{
+	font-family:'Trebuchet MS', Helvetica, sans-serif;
+	color:#f6f6f6;
+}
+.tab_container a{
+	color:#232323;
+	text-decoration:none;
+	cursor:pointer;
+}
+.tab_number{
+	font-weight:bold;
+	font-size:40px;
+	line-height:50px;
+	float:left;
+}
+.tab_text{
+	line-height:10px;
+	padding-top:12px;
+	float:left;
+	position:absolute;
+}
+.tab_top_text{
+	font-weight:bold;
+	font-size:17px;
+}
+.tab_bottom_text{
+	font-size:10px;
+}
+
+
+/******************/
+/***** THEMES *****/
+/******************/
+
+/* --- Blue Theme --- */
+
+/* general background for tab element */
+.theme_one li{background: url(../images/theme_1/tab_background.jpg) repeat-x;}
+/* rounded corner for far left tab */
+.theme_one .tab_first .tab_corner_left{background-image: url(../images/theme_1/tab_corner_left.png);}
+/* rounded corner for far right tab */
+.theme_one .tab_last .tab_corner_right{background-image: url(../images/theme_1/tab_corner_right.png);}
+/* arrow image for each tab */
+.theme_one li.tab_pointer{background-image: url(../images/theme_1/tab_on_cap.png);}
+/*Styles for active tab*/
+/* general background for tab active element */
+.theme_one  li.active{background: url(../images/theme_1/tab_background_active.jpg) repeat-x;}
+/* rounded corner for far left tab */
+.theme_one .active .tab_corner_left{background-image: url(../images/theme_1/tab_corner_left_active.png);}
+/* rounded corner for far right tab */
+.theme_one .active .tab_corner_right{background-image: url(../images/theme_1/tab_corner_right_active.png);}
+/* arrow image for each tab */
+.theme_one li.active.tab_pointer{background-image: url(../images/theme_1/tab_on_cap_active.png);}
+/* arrow image before active tab */
+.theme_one li.tab_pointer_tail{background-image: url(../images/theme_1/tab_on_cap_active_tail.png);}
+/* text color */
+.theme_one a .tab_number{color:#f6f6f6;}
+.theme_one a .tab_top_text {color:#f6f6f6;}
+.theme_one a .tab_bottom_text{color:#f6f6f6;}
+
+
+/* --- Silver Theme --- */
+
+/* general background for tab element */
+.theme_two li{background: url(../images/theme_2/tab_background.jpg) repeat-x;}
+/* rounded corner for far left tab */
+.theme_two .tab_first .tab_corner_left{background-image: url(../images/theme_2/tab_corner_left.png);}
+/* rounded corner for far right tab */
+.theme_two .tab_last .tab_corner_right{background-image: url(../images/theme_2/tab_corner_right.png);}
+/* arrow image for each tab */
+.theme_two li.tab_pointer{background-image: url(../images/theme_2/tab_on_cap.png);}
+/*Styles for active tab*/
+/* general background for tab active element */
+.theme_two  li.active{background: url(../images/theme_2/tab_background_active.jpg) repeat-x;}
+/* rounded corner for far left tab */
+.theme_two .active .tab_corner_left{background-image: url(../images/theme_2/tab_corner_left_active.png);}
+/* rounded corner for far right tab */
+.theme_two .active .tab_corner_right{background-image: url(../images/theme_2/tab_corner_right_active.png);}
+/* arrow image for each tab */
+.theme_two li.active.tab_pointer{background-image: url(../images/theme_2/tab_on_cap_active.png);}
+/* arrow image before active tab */
+.theme_two li.tab_pointer_tail{background-image: url(../images/theme_2/tab_on_cap_active_tail.png);}
+/* text color */
+.theme_two a .tab_number{color:#383838;}
+.theme_two a .tab_top_text{color:#383838;}
+.theme_two a .tab_bottom_text{color:#383838;}
+
+/* --- Black Theme --- */
+/* general background for tab element */
+.theme_three li{background: url(../images/theme_3/tab_background.jpg) repeat-x;}
+/* rounded corner for far left tab */
+.theme_three .tab_first .tab_corner_left{background-image: url(../images/theme_3/tab_corner_left.png);}
+/* rounded corner for far right tab */
+.theme_three .tab_last .tab_corner_right{background-image: url(../images/theme_3/tab_corner_right.png);}
+/* arrow image for each tab */
+.theme_three li.tab_pointer{background-image: url(../images/theme_3/tab_on_cap.png);}
+/*Styles for active tab*/
+/* general background for tab active element */
+.theme_three  li.active{background: url(../images/theme_3/tab_background_active.jpg) repeat-x;}
+/* rounded corner for far left tab */
+.theme_three .active .tab_corner_left{background-image: url(../images/theme_3/tab_corner_left_active.png);}
+/* rounded corner for far right tab */
+.theme_three .active .tab_corner_right{background-image: url(../images/theme_3/tab_corner_right_active.png);}
+/* arrow image for each tab */
+.theme_three li.active.tab_pointer{background-image: url(../images/theme_3/tab_on_cap_active.png);}
+/* arrow image before active tab */
+.theme_three li.tab_pointer_tail{background-image: url(../images/theme_3/tab_on_cap_active_tail.png);}
+/* text color */
+.theme_three a .tab_number{color:#f0f0f0;}
+.theme_three a .tab_top_text{color:#cecece;}
+.theme_three a .tab_bottom_text{color:#cecece;}
+/*active text color*/
+.theme_three .active a .tab_top_text{color:#f0f0f0;}
+.theme_three .active a .tab_bottom_text{color:#f0f0f0;}

@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>CSS Form</title>
+	<link rel="stylesheet" type="text/css" href="css/form_tab.css" />
+</head>
+
+<body>
+	<div class="tab_container">
+		<ul class="tab_bar theme_one"> <!-- Append theme class here to 'tab_bar', e.g. 'tab_bar theme_one' -->
+			<li class="tab_first">
+				<a href="#">
+					<span class="tab_number">1</span>
+					<span class="tab_text"><span class="tab_top_text">STEP 1</span><br />
+					<span class="tab_bottom_text">v. s.</span></span>
+				</a>
+				<div class="tab_corner_left">
+				</div>
+			</li>
+			
+			<li class="tab_pointer"></li>
+			
+			<li class="tab_inner">
+				<a href="#">
+					<span class="tab_number">2</span>
+					<span class="tab_text"><span class="tab_top_text">STEP 2</span><br />
+					<span class="tab_bottom_text">A really super long description</span></span>
+				</a>
+			</li>
+			
+			<li class="tab_pointer"></li>
+			
+			<li class="tab_last">
+				<a href="#">
+					<span class="tab_number">3</span>
+					<span class="tab_text"><span class="tab_top_text">STEP 3</span><br />
+					<span class="tab_bottom_text">short description</span></span>
+				</a>
+				<div class="tab_corner_right">
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="demo_controls"><br /><br />
+		<a href=""><span id="prev">prev</span></a> | <a href=""><span id="next">next</span></a><br /><br />
+		
+		<a href="" id="t_1">theme one</a> | <a href="" id="t_2">theme two</a> | <a href="" id="t_3">theme three</a><br /><br />
+		
+		<a href="" id="add">Add</a> | <a href="" id="remove">Remove</a>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/form_tab.js"></script>
+</body>
+</html>
