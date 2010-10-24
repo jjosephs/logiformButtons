@@ -44,6 +44,8 @@ $(function(){
 		return false;
 	});
 	
+	// PLUGIN BRANCH
+	
 	// click handler
 	$('#remove').click(function(){
 		removeButton();
